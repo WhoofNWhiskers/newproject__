@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRAdius="5dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hosting counter:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/hosted_counter_textView_2"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25pt"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <EditText
+
+                    android:id="@+id/Name"
+                    style="@style/EditTextAsTextView"
+                    android:layout_width="166dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+
+                    android:id="@+id/Rating"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/baseline_star_24"
+                    android:gravity="center"
+                    android:text="4.6"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/EditButton"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="280dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/baseline_mode_edit_outline_24"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:text="Save"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:src="@drawable/ppc"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="98dp"
+        android:layout_height="98dp"/>
+
+    <Button
+        android:id="@+id/changeProfileButton"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_alignEnd="@id/profileImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#E91E63"
+        android:drawableTop="@drawable/baseline_camera_alt_24"
+        android:drawableTint="#FFFFFF"
+        android:elevation="10dp" />
+
+
+</RelativeLayout>

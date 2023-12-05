@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- Background image -->
+
+    <!-- Title -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_image" />
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to my app!"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/description_textview"
+        android:layout_width="298dp"
+        android:layout_height="94dp"
+        android:layout_below="@id/title_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="This app is designed to help you learn Android development. It includes tutorials, code examples, and more!"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- "Let's Go" button -->
+    <Button
+        android:id="@+id/lets_go_button"
+        android:layout_width="144dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/button_shape"
+        android:text="Let's Go!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+
+
+

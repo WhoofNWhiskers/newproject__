@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">  </string>
+    <string name="google_map_Api">AIzaSyA6jZKoMPOHlpjfzbz2vo_qEE1MdpBXKWk</string>
+
+
+    <string-array name="usertype">
+        <item>host</item>
+        <item>owner</item>
+    </string-array>
+
+    <string-array name="filter_gender">
+        <item>all</item>
+        <item>female</item>
+        <item>male</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+    <string-array name="filter_city">
+        <item>City</item>
+        <item>Jeddah</item>
+        <item>Taif</item>
+        <item>Abha</item>
+        <item>Makkah</item>
+        <item>Medina</item>
+        <item>Riyadh</item>
+
+        <!-- Add more items as needed -->
+    </string-array>
+    <string-array name="pet_types">
+        <item>Pet Type</item>
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Bird</item>
+        <item>Hamster</item>
+        <!-- Add more pet types as needed -->
+    </string-array>
+    <string-array name="price_ranges">
+        <item>Price</item>
+        <item>0-30</item>
+        <item>31-50</item>
+        <item>51-100</item>
+        <item>101+</item>
+    </string-array>
+
+
+</resources>

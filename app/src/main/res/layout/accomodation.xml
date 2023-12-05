@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DF9898"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRAdius="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="631dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="359dp"
+            android:layout_height="49dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:drawableStart="@drawable/baseline_home_24"
+                android:text="Accommodation"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="554dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="526dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="359dp"
+                    android:layout_height="554dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Property Type"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_accommodatoin"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Apartment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apartment" />
+
+                        <RadioButton
+                            android:id="@+id/Villa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Villa" />
+
+                        <RadioButton
+                            android:id="@+id/Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flat" />
+
+
+                        <RadioButton
+                            android:id="@+id/BeachHouse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BeachHouse" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amenities"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/Swimming_Pool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swimming Pool"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <CheckBox
+                    android:id="@+id/Backyard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Backyard"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/Roof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roof"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/Grass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grass"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rooms number"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/RoomsNumberEditText"
+                            style="@style/EditTextAsTextView"
+                            android:layout_width="60dp"
+                            android:layout_height="42dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="2dp"
+                            android:inputType="numberDecimal"
+                            card_view:text="3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do I Have Other Pets in my House?"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/YesNoRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/YES"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/NO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NO" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="338dp"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="66dp"
+                            android:layout_height="wrap_content"
+                            android:text="I Have"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            />
+
+                        <EditText
+                        android:id="@+id/OtherPetEditText"
+                        style="@style/EditTextAsTextView"
+                        android:layout_width="254dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:inputType="text"
+
+                        card_view:text="3" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

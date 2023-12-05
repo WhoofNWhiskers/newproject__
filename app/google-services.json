@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "589966766282",
+    "firebase_url": "https://finaledit-f3455-default-rtdb.firebaseio.com",
+    "project_id": "finaledit-f3455",
+    "storage_bucket": "finaledit-f3455.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589966766282:android:284553200f524e03d10433",
+        "android_client_info": {
+          "package_name": "com.example.newproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe6qf6d3NhWn4YG0putghaCqPj71YlC2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

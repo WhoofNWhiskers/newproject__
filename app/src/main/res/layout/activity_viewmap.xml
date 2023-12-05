@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewmap">
+
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/genderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+       >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGender"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:onClick="toggleGenderButtons"
+            android:layout_marginTop="16dp"
+            android:text="Gender"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@drawable/button_text_color" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/filter_city"
+            android:textAlignment="center"
+            android:background="@drawable/spinner_background"
+            android:textColor="@drawable/spinner_text_color" />
+
+        <Spinner
+            android:id="@+id/petsSpinner"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/pet_types"
+            android:textAlignment="center"
+            android:background="@drawable/spinner_background"
+            android:textColor="@drawable/spinner_text_color" />
+        <Spinner
+            android:id="@+id/priceSpinner"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/price_ranges"
+            android:textColor="@drawable/spinner_text_color" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/CityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMale"
+            android:text="Male"
+            android:visibility="invisible"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:onClick="toggleGenderButtons"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@drawable/button_text_color"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFemale"
+            android:text="Female"
+            android:visibility="invisible"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:onClick="toggleGenderButtons"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@drawable/button_text_color"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

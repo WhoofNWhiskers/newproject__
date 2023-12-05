@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/petNamesCardView"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRAdius="10dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="81dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="10dp"
+                    android:drawableLeft="@drawable/baseline_pets_24"
+                    android:gravity="center"
+                    android:text="Pets hostig"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <CheckBox
+                    android:id="@+id/Cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cat"
+                   />
+
+                <CheckBox
+                    android:id="@+id/Dog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dog "
+                    />
+
+                <CheckBox
+                    android:id="@+id/Bird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bird"
+                     />
+
+                <CheckBox
+                    android:id="@+id/Hamster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamster"
+
+
+                    />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
